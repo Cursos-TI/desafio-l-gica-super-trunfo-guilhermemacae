@@ -165,18 +165,7 @@ int main() {
         } else {
         printf("A cidade %s tem maior PIB per capta.\n", cidade2);
         }
-   
-   
-   
-   
-   
     
-    // Certifique-se de que o sistema mostre claramente qual carta venceu e com base em qual atributo.
-
-    // Exemplo:
-    // printf("A cidade vencedora é: %s\n", cidadeVencedora);
-
-
     printf("\n");
 
     return 0;
