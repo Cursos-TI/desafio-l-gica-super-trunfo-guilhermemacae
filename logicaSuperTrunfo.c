@@ -99,6 +99,32 @@ int main() {
     percap2 = (float) pib2 / populacao2;
     printf("\n");
 
+    // Exibição dos dados da primeira carta 
+    
+    printf("Carta 1: \n");
+    printf("Codigo da Carta 1: %c%s \n", letra1, codigo1);
+    printf("Cidade: %s \n", cidade1);
+    printf("População: %.0f Milhões\n", populacao1 / 1000000);
+    printf("Área: %.1f km2\n", area1);
+    printf("PIB: %.0f Bilhões de reais\n", pib1 / 1000000000);
+    printf("Pontos turísticos: %d \n", turistico1);
+    printf("PIB per Capita: R$%.2f reais\n", percap1);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
+    printf("\n");
+    
+    // Exibição dos dados da segunda carta 
+
+    printf("Carta 2: \n");
+    printf("Codigo da Carta 2: %c%s \n", letra2, codigo2);
+    printf("Cidade: %s \n", cidade2);
+    printf("População: %.0f Milhões\n", populacao2 / 1000000);
+    printf("Área: %.1f km2\n", area2);
+    printf("PIB: %.0f Bilhões de reais\n", pib2 / 1000000000);
+    printf("Pontos turísticos: %d \n", turistico2);
+    printf("PIB per Capita: R$%.2f reais\n", percap2);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
+    printf("\n");
+
     // Exibição da comparação
     
     printf("Comparação dos resultados: \n");
