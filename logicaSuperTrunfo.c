@@ -109,7 +109,7 @@ int main() {
     printf("PIB: %.0f Bilhões de reais\n", pib1 / 1000000000);
     printf("Pontos turísticos: %d \n", turistico1);
     printf("PIB per Capita: R$%.2f reais\n", percap1);
-    printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
+    printf("Densidade demográfica: %.2f hab/km²\n", densidade1);
     printf("\n");
     
     // Exibição dos dados da segunda carta 
@@ -122,7 +122,7 @@ int main() {
     printf("PIB: %.0f Bilhões de reais\n", pib2 / 1000000000);
     printf("Pontos turísticos: %d \n", turistico2);
     printf("PIB per Capita: R$%.2f reais\n", percap2);
-    printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
+    printf("Densidade demográfica: %.2f hab/km²\n", densidade2);
     printf("\n");
 
     // Exibição da comparação
