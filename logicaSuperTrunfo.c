@@ -1,10 +1,5 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 2 - Comparação das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de comparação de cartas de cidades. 
-// Siga os comentários para implementar cada parte do desafio.
-
 int main() {
 
     printf("Desafio SuperTrunfo!\n");
@@ -90,12 +85,12 @@ int main() {
     printf("Digite a quantidade de pontos turísticos: ");
     scanf("%d", &turistico2);
 
-    // Calculando a densidade da segunda cidade
     populacao2 *= 1000000;
+    // Calculando a densidade da segunda cidade
     densidade2 = (float) populacao2 / area2;                           
         
-    // Calculando o percapta da segunda cidade
     pib2 *= 1000000000;
+    // Calculando o percapta da segunda cidade
     percap2 = (float) pib2 / populacao2;
     printf("\n");
 
