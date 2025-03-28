@@ -114,12 +114,28 @@ int main() {
     printf("\n");
 
     if (populacao1 > populacao2) {
-    printf("Cidade 1 tem maior população.\n");
-    } else {
-    printf("Cidade 2 tem maior população.\n");
+        printf("A cidade %s tem a maior população.\n", cidade1);
+        } else {
+        printf("A cidade %s tem a maior população.\n", cidade2);
     }
 
+    if (area1 > area2) {
+        printf("A cidade %s tem a maior área.\n", cidade1);
+        } else {
+        printf("A cidade %s tem a maior área.\n", cidade2);
+        }
 
+    if (pib1 > pib2) {
+        printf("A cidade %s tem o maior PIB.\n", cidade1);
+        } else {
+        printf("A cidade %s tem o maior PIB.\n", cidade2);
+        }
+
+    if (turistico1 > turistico2) {
+        printf("A cidade %s tem mais pontos turísticos.\n", cidade1);
+        } else {
+        printf("A cidade %s tem mais pontos turísticos.\n", cidade2);
+        }
 
    
    
@@ -145,6 +161,8 @@ int main() {
 
     // Exemplo:
     // printf("A cidade vencedora é: %s\n", cidadeVencedora);
+
+
     printf("\n");
 
     return 0;
