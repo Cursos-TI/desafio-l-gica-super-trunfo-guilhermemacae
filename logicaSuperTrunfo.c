@@ -99,15 +99,6 @@ int main() {
     percap2 = (float) pib2 / populacao2;
     printf("\n");
 
-    // Calculo para comparação
-
-    resultadoPopulacao = populacao1 > populacao2;
-    resultadoArea = area1 > area2;
-    resultadoPib = pib1 > pib2;
-    resultadoTuristico = turistico1 > turistico2;
-    resultadoDesidade = densidade1 > densidade2; // a carta com menor valor vence
-    resultadoPercap = percap1 > percap2;
-
     // Exibição da comparação
     
     printf("Comparação dos resultados: \n");
@@ -137,26 +128,23 @@ int main() {
         printf("A cidade %s tem mais pontos turísticos.\n", cidade2);
         }
 
-   
-   
-   
-   
-   
-    // (Repita para cada propriedade)
+    if (densidade1 < densidade2) {
+        printf("A cidade %s tem a menor densidade demográfica.\n", cidade1);
+        } else {
+        printf("A cidade %s tem a menor densidade demográfica.\n", cidade2);
+        }
 
-    // Comparação de Cartas:
-    // Desenvolva a lógica de comparação entre duas cartas.
-    // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
-
-    // Exemplo:
-    // if (populacaoA > populacaoB) {
-    //     printf("Cidade 1 tem maior população.\n");
-    // } else {
-    //     printf("Cidade 2 tem maior população.\n");
-    // }
-
-    // Exibição dos Resultados:
-    // Após realizar as comparações, exiba os resultados para o usuário.
+    if (percap1 > percap2) {
+        printf("A cidade %s tem maior PIB per capta.\n", cidade1);
+        } else {
+        printf("A cidade %s tem maior PIB per capta.\n", cidade2);
+        }
+   
+   
+   
+   
+   
+    
     // Certifique-se de que o sistema mostre claramente qual carta venceu e com base em qual atributo.
 
     // Exemplo:
