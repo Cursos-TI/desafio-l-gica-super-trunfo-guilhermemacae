@@ -18,12 +18,6 @@ int main() {
     int turistico1, turistico2;
     float densidade1, densidade2;
     float percap1, percap2;
-    int resultadoPopulacao;
-    int resultadoArea;
-    int resultadoPib;
-    int resultadoTuristico;
-    int resultadoDesidade;
-    int resultadoPercap;
     int escolhaJogador, escolhaComputador;
     srand(time(0));
 
@@ -116,49 +110,68 @@ int main() {
     switch (escolhaJogador)
     {
     case 1:
-        printf("Jogador: População - ");
-        break;
+    if (populacao1 > populacao2) {
+        printf("A cidade %s tem a maior população.\n", cidade1);
+    } else if (populacao1 < populacao2) {
+        printf("A cidade %s tem a maior população.\n", cidade2);
+    } else {
+        printf("Ambas as cidades têm a mesma população.\n");
+    }
+    break;
+
     case 2:
-        printf("Jogador: Área - ");
-        break;
+    if (area1 > area2) {
+        printf("A cidade %s tem a maior área.\n", cidade1);
+    } else if (area1 < area2) {
+        printf("A cidade %s tem a maior área.\n", cidade2);
+    } else {
+        printf("Ambas as cidades têm a mesma área.\n");
+    }
+    break;
+    
     case 3:
-        printf("Jogador: PIB - ");
-        break;
+    if (pib1 > pib2) {
+        printf("A cidade %s tem o maior PIB.\n", cidade1);
+    } else if (pib1 < pib2) {
+        printf("A cidade %s tem o maior PIB.\n", cidade2);
+    } else {
+        printf("Ambas as cidades têm o mesmo PIB.\n");
+    }
+    break;
+
     case 4:
-        printf("Jogador: Pontos Turísticos - ");
-        break;
+    if (turistico1 > turistico2) {
+        printf("A cidade %s tem mais pontos turísticos.\n", cidade1);
+    } else if (turistico1 < turistico2) {
+        printf("A cidade %s tem mais pontos turísticos.\n", cidade2);
+    } else {
+       printf("Ambas as cidades têm o mesmo número de pontos turísticos.\n");
+    }
+    break;
+
     case 5:
-        printf("Jogador: Densidade - ");
-        break;
+    if (densidade1 < densidade2) {
+        printf("A cidade %s tem menor densidade demográfica.\n", cidade1);
+    } else if (densidade1 < densidade2) {
+        printf("A cidade %s tem menor densidade demográfica.\n", cidade2);
+    } else {
+        printf("Ambas as cidades têm a mesma densidade demográfica.\n");
+    }
+    break;
+    
     case 6:
-        printf("Jogador: PIB Per Capta - ");
-        break;
+    if (percap1 > percap2) {
+        printf("A cidade %s tem o maior PIB per capta.\n", cidade1);
+    } else if (percap1 < percap2) {
+        printf("A cidade %s tem o maior PIB per capta.\n", cidade2);
+    } else {
+        printf("Ambas as cidades têm o mesmo PIB per capta.\n");
+    }
+    break;
     default:
-        printf("Opção Inválida! ");
-        break;
+        printf("Opção inválida! Por favor, escolha um número de 1 a 6.\n");
+    break;
     }
-    switch (escolhaComputador)
-    {
-    case 1:
-        printf("Computador: População");
-        break;
-    case 2:
-        printf("Computador: Área");
-        break;
-    case 3:
-        printf("Computador: PIB");
-        break;
-    case 4:
-        printf("Computador: Pontos Turísticos");
-        break;
-    case 5:
-        printf("Computador: Densidade");
-        break;
-    case 6:
-        printf("Computador: PIB Per Capta");
-        break;
-    }
-    printf("\n");
 
     /*
     // Exibição dos dados da primeira carta 
@@ -186,7 +199,7 @@ int main() {
     printf("PIB per Capita: R$%.2f reais\n", percap2);
     printf("Densidade demográfica: %.2f hab/km²\n", densidade2);
     printf("\n");
-    */
+    
 
     // Exibição da comparação
     
@@ -228,7 +241,7 @@ int main() {
         } else {
         printf("A cidade %s tem maior PIB per capta.\n", cidade2);
         }
-    
+    */
     printf("\n");
 
     return 0;
