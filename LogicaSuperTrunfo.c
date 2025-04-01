@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 int main() {
 
@@ -22,6 +24,8 @@ int main() {
     int resultadoTuristico;
     int resultadoDesidade;
     int resultadoPercap;
+    int escolhaJogador, escolhaComputador;
+    srand(time(0));
 
     // Entrada de dados da primeira carta
     
@@ -93,7 +97,70 @@ int main() {
     // Calculando o percapta da segunda cidade
     percap2 = (float) pib2 / populacao2;
     printf("\n");
+    
+    // Menu interativo
 
+    printf("\n");
+    printf("1. População \n");
+    printf("2. Área \n");
+    printf("3. PIB \n");
+    printf("4. Pontos Turísticos \n");
+    printf("5. Densidade \n");
+    printf("6. PIB Per Capta \n");
+    printf("\n");
+    printf("Escolha uma opção: ");
+    scanf("%d", &escolhaJogador);
+
+    escolhaComputador = rand() % 6 + 1;
+    printf("\n");
+    switch (escolhaJogador)
+    {
+    case 1:
+        printf("Jogador: População - ");
+        break;
+    case 2:
+        printf("Jogador: Área - ");
+        break;
+    case 3:
+        printf("Jogador: PIB - ");
+        break;
+    case 4:
+        printf("Jogador: Pontos Turísticos - ");
+        break;
+    case 5:
+        printf("Jogador: Densidade - ");
+        break;
+    case 6:
+        printf("Jogador: PIB Per Capta - ");
+        break;
+    default:
+        printf("Opção Inválida! ");
+        break;
+    }
+    switch (escolhaComputador)
+    {
+    case 1:
+        printf("Computador: População");
+        break;
+    case 2:
+        printf("Computador: Área");
+        break;
+    case 3:
+        printf("Computador: PIB");
+        break;
+    case 4:
+        printf("Computador: Pontos Turísticos");
+        break;
+    case 5:
+        printf("Computador: Densidade");
+        break;
+    case 6:
+        printf("Computador: PIB Per Capta");
+        break;
+    }
+    printf("\n");
+
+    /*
     // Exibição dos dados da primeira carta 
     
     printf("Carta 1: \n");
@@ -119,6 +186,7 @@ int main() {
     printf("PIB per Capita: R$%.2f reais\n", percap2);
     printf("Densidade demográfica: %.2f hab/km²\n", densidade2);
     printf("\n");
+    */
 
     // Exibição da comparação
     
